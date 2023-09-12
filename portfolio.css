@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: black;
+  padding: 2rem 4rem 3rem 4rem;
+}
+span {
+  color: wheat;
+}
+
+header nav {
+  display: inline;
+  text-decoration: none;
+  position: relative;
+  left: 25%;
+}
+header nav a {
+  color: darkgray;
+  text-decoration: none;
+  margin-left: 2%;
+}
+.last {
+  margin-left: 20%;
+  text-decoration: none;
+  background-color: yellow;
+  color: black;
+  padding: 12px 20px;
+}
+
+.text {
+  font-size: 30px;
+  color: white;
+  width: 60%;
+  margin-top: 5rem;
+}
+
+.text > p {
+  font-size: 0.7em;
+}
+.logos {
+  margin-top: 5rem;
+}
+.photos {
+  display: flex;
+  padding-top: 4rem;
+}
+.photo-left {
+  float: left;
+}
+.photos-left p {
+  clear: left;
+}
+.photos .photos-right p {
+  clear: right;
+}
+
+.photos-right {
+  float: right;
+}
+.photos figcaption a {
+  text-decoration: none;
+  font-size: 35px;
+  color: white;
+}
+.photos figcaption p {
+  color: white;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  background-color: rgb(49, 47, 53);
+  padding: 5rem 4rem 3rem 4rem;
+  line-height: 1.5rem;
+}
+main .column1 h2 {
+  font-size: 100rem;
+}
+
+.column1 {
+  width: 30rem;
+}
+.column2 {
+  margin-left: 4%;
+  width: 30rem;
+}
+
+g,
+svg {
+  margin-right: 6.5%;
+}
+.second {
+  display: grid;
+  background-color: black;
+  color: white;
+  padding: 5rem 4rem 3rem 4rem;
+}
+.second h2 {
+  font-size: 2.5rem;
+  width: 60%;
+}
+.second a {
+  text-decoration: none;
+  background-color: yellow;
+  color: black;
+  width: 8%;
+  padding: 12px 20px;
+  margin-top: 0.9em;
+}
+
+footer {
+  background-color: rgb(49, 47, 53);
+  padding: 1rem 4rem 1rem 4rem;
+}
+footer span {
+  color: wheat;
+}
+footer > svg {
+  display: inline;
+}
+footer .social-media {
+  display: inline;
+  position: relative;
+  left: 47rem;
+}

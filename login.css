@@ -1,0 +1,109 @@
+img {
+  height: 120%;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -34rem;
+}
+
+.column1 {
+  margin: 1.3rem 3rem;
+}
+.columns .column1 section {
+  display: grid;
+  grid-template-columns: 3rem 7rem;
+}
+
+.columns .column1 section {
+  margin-top: 1rem;
+}
+.columns .column1 .steps p {
+  color: hsl(231, 11%, 63%);
+  margin-top: -4px;
+  margin-bottom: 9px;
+}
+.columns .column1 .steps h3 {
+  color: white;
+  margin-top: -10px;
+}
+.columns .column1 section .circle {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  border: solid 1px white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.column2 {
+  position: absolute;
+  left: 28rem;
+  max-width: 100%;
+}
+
+.column2 h1 {
+  font-weight: bolder;
+  font-size: 200%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.column2 p {
+  margin-top: -1.75rem;
+  color: hsl(231, 11%, 63%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 2px;
+}
+
+.columns .column2 .information-section input {
+  display: block;
+  width: 95%;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: solid rgb(185, 184, 184) 1px;
+}
+
+.column2 .information-section div {
+  margin-top: 7%;
+}
+#form .column2 div #text {
+  background-color: brown;
+  height: 30px;
+  width: 100px;
+}
+
+.column2 .information-section button {
+  position: absolute;
+  top: 130%;
+  left: 80%;
+  background-color: rgb(45, 45, 204);
+  width: 6rem;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .column2 .information-section button {
+    left: 33%;
+  }
+  .column2 {
+    left: 20rem;
+  }
+  img {
+    max-width: 100%;
+    max-width: 100%;
+  }
+  .side-picture {
+    width: 300px;
+  }
+  .column2 {
+    margin-top: -3rem;
+  }
+}

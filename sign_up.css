@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  height: 85%;
+  width: 70%;
+  top: 10%;
+  bottom: 50%;
+  right: 25%;
+  left: 15%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+img {
+  position: relative;
+  bottom: 18%;
+  width: 100%;
+  height: 80%;
+}
+
+.column1 {
+  background-color: #013243;
+}
+.column1 h1 {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin-top: 10%;
+}
+.column1 p {
+  text-align: center;
+  color: rgb(100, 100, 180);
+}
+
+.column2 {
+  background-color: white;
+  padding-left: 15%;
+  padding-top: 10%;
+}
+.column2 .label1 {
+  margin-top: 2rem;
+  font-weight: bolder;
+}
+.column2 .Email {
+  margin-top: 0.5rem;
+  padding: 0.9rem 7rem 0.9rem 0.9rem;
+}
+
+.column2 .label2 {
+  margin-top: 2rem;
+  font-weight: bolder;
+}
+
+.column2 .password {
+  margin-top: 0.5rem;
+  padding: 0.9rem 7rem 0.9rem 0.9rem;
+}
+.column2 .checkbox {
+  margin-top: 2rem;
+}
+
+.column2 .check-label {
+  width: 1rem;
+}
+button {
+  margin-top: 3rem;
+  color: white;
+  background-color: #013243;
+  padding: 1rem 6rem 1rem 6rem;
+  border-radius: 4px;
+}

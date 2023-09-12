@@ -1,0 +1,23 @@
+.cal{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top:  2%;
+  background-color: gray;
+  border: none;
+  margin-top: 9px;
+  
+}
+
+.cal0{
+    border-radius: 27px;
+    height: 40px;
+    width: 90px;
+}
+
+.cals{
+    column-count: 2;
+    column-gap: -50%;
+    display: inline-block;
+    
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>log in page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+ 
+  document.getElementById("email").addEventListener("onkeydown",valid()) 
+
+ function valid(){
+    var text = document.getElementById("text")
+    var email = document.getElementById("email").value
+    var form = document.getElementById("form");
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+    if(email.match(pattern)){
+        form.classList.remove("invalid");
+        form.classList.add("valid");
+        text.innerHTML = "your email is valid";
+        text.style.color = "#17d229";
+    }else{
+          form.classList.remove("valid");
+         form.classList.add("invalid");
+         text.innerHTML = "please enter a valid email address"
+          text.style.color = "#d21717";
+    }
+    if (email == "") {
+        form.classList.remove("valid")
+        form.classList.remove("invalid")
+        text.style.color = "#fffff"
+        text.innerHTML = ""
+
+        
+    }
+  }
+
+    </script>
+    <div class="side-picture">
+    <img
+      src="multi-step-form-main/assets/images/bg-sidebar-desktop.svg"
+      alt=""
+      srcset=""
+    />
+    </div>
+
+    <span id="text"></span>
+    
+    <section class="columns">
+    <section class="column1">
+      <!--first-->
+      <section class="step1">
+        <div class="circle">1</div>
+        <div class="steps">
+        <p>step1</p>
+        <h3>you info</h3>
+        </div>
+      </section>
+
+      <!--second-->
+
+      <section class="step2">
+        <div class="circle">2</div>
+        <div class="steps">
+        <p>step2</p>
+        <h3>Select a plan</h3>
+        </div>
+      </section>
+
+      <!--third-->
+      <section class="step3">
+        <div class="circle">3</div>
+        <div class="steps">
+        <p>step3</p>
+        <h3>Add-ons</h3>
+        </div>
+      </section>
+
+      <!--fourth-->
+      <section class="step4">
+        <div class="circle">4</div>
+        <div class="steps">
+        <p>step4</p>
+        <h3>Summary</h3>
+        </div>
+      </section>
+    </section>
+   <form id="form" action="#">    
+    <!--input area -->
+    <section class="column2">
+      <h1>Personal information</h1>
+      <p>please provide your name,email address,and phone number.</p>
+
+      <section class="information-section">
+        <div>
+        <label for="Name">Name</label>
+        <input id="name" name="Name" value="" type="text" placeholder="name"/>
+        
+        </div> 
+        
+        <div>
+          <span id="text"></span>
+        <label for="Email">Email address</label>
+        <input  name="Email" id="email "value="" type="text" placeholder="Email address" />
+        
+        
+       </div>
+        <div>
+        <label for="phone">phone number</label>
+        <input id="phone number" name="phone" value="" type="text" placeholder="phone number" />
+         </div>
+        <button type="submit">Next step</button>
+      </section>
+    </section>
+   </form>
+  </body>
+</html>

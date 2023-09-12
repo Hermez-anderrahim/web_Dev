@@ -1,0 +1,41 @@
+/*:nth-child(the child number )*/
+
+.container {
+  position: relative;
+}
+
+.container a {
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: grey;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+}
+
+.container .btn {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.container:active .link1 {
+  transform: translateX(5rem);
+  transition: transform 0.5s 0.2s;
+}
+.container:active .link2 {
+  transform: translateX(-5rem);
+  transition: transform 0.5s 0.4s;
+}
+.container:active .link3 {
+  transform: translateY(5rem);
+  transition: transform 0.5s 0.3s;
+}
+
+.contauner a {
+  text-decoration: none;
+}
